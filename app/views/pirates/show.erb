@@ -5,12 +5,14 @@
     <h3><li>Weight: <%= @pirate.weight %></li></h3>
     <h3><li>Height: <%= @pirate.height %></li></h3>
 </ul>
-<br></br>
-<h2>Ships: <%=  %></h2>
-<ul>
-    <h3><li>Name: <%=  %></li></h3>
-    <h3><li>Category: <%=  %></li></h3>
-    <h3><li>Booty: <%=  %></li></h3>
-</ul>
 
-<h3>To see all of the pirates, click <a href="/pirates">here</a>.</h3>
+<ul>
+    <% @pirate.ships.each_with_index do |ship, index| %>
+    <h2>Ship #<%= index + 1 %></h2>
+    <h3><li>Name: <%= ship.name %></li></h3>
+    <h3><li>Category: <%= ship.category %></li></h3>
+    <h3><li>Booty: <%= ship.booty %></li></h3>
+    <% end %>
+</ul>
+<br></br>
+<h3>To see the rest of the pirates, click <a href="/pirates">here</a>.</h3>

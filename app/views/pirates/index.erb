@@ -2,10 +2,7 @@
 
 <ul>
     <% @pirates.each do |pirate| %>
-    <li>Name: <%= pirate.name %></li>
-    <li>Weight: <%= pirate.weight %></li>
-    <li>Height: <%= pirate.height %></li>
-    <br></br>
+    <li><h3><a href="pirates/<%= pirate.id %>"><%= pirate.name %></a></h3></li>
     <% end %>
 </ul>
 
