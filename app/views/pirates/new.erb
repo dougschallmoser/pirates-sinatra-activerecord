@@ -2,31 +2,31 @@
 
 <form method="POST" action="/pirates">
     <p><label for="pirate_name">Pirate Name:</label>
-    <input type="text" id="pirate_name" name="pirate[:name]"/></p>
+    <input type="text" id="pirate_name" name="pirate[name]"/></p>
 
-    <p><label for="pirate_weight">Pirate weight:</label>
-    <input type="text" id="pirate_weight" name="pirate[:weight]"/></p>
+    <p><label for="pirate_weight">Pirate Weight:</label>
+    <input type="text" id="pirate_weight" name="pirate[weight]"/></p>
 
-    <p><label for="pirate_height">Pirate Name:</label>
-    <input type="text" id="pirate_height" name="pirate[:height]"/></p>
+    <p><label for="pirate_height">Pirate Height:</label>
+    <input type="text" id="pirate_height" name="pirate[height]"/></p>
 
     <p><label for="ship_name_1">Ship #1 Name:</label>
-    <input type="text" id="ship_name_1" name="pirate[:ships][][:name]"/></p>
+    <input type="text" id="ship_name_1" name="pirate[ships][][name]"/></p>
 
     <p><label for="ship_category_1">Ship #1 Category:</label>
-    <input type="text" id="ship_category_1" name="pirate[:ships][][:category]"/></p>
+    <input type="text" id="ship_category_1" name="pirate[ships][][category]"/></p>
 
     <p><label for="ship_booty_1">Ship #1 Booty:</label>
-    <input type="text" id="ship_booty_1" name="pirate[:ships][][:booty]"/></p>
+    <input type="text" id="ship_booty_1" name="pirate[ships][][booty]"/></p>
 
     <p><label for="ship_name_2">Ship #2 Name:</label>
-    <input type="text" id="ship_name_2" name="pirate[:ships][][:name]"/></p>
+    <input type="text" id="ship_name_2" name="pirate[ships][][name]"/></p>
 
     <p><label for="ship_category_2">Ship #2 Category:</label>
-    <input type="text" id="ship_category_2" name="pirate[:ships][][:category]"/><p>
+    <input type="text" id="ship_category_2" name="pirate[ships][][category]"/><p>
 
     <p><label for="ship_booty_2">Ship #2 Booty:</label>
-    <input type="text" id="ship_booty_2" name="pirate[:ships][][:booty]"/></p>
+    <input type="text" id="ship_booty_2" name="pirate[ships][][booty]"/></p>
 
     <input type="submit" value="Submit"/>
 </form>

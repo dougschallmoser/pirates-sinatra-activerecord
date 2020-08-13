@@ -22,8 +22,15 @@ class Application < Sinatra::Base
 
     post '/pirates' do 
         pirate = Pirate.new(name: params[:pirate][:name], weight: params[:pirate][:weight], height: params[:pirate][:weight])
+        pirate.save
         
-        # params[:pirate][:ships].each do |ship_detail|
+        params[:pirate][:ships].each do |ship_detail|
+            ship = Ship.new(ship_detail)
+            ship.pirate = pirate
+            ship.save
+        end
+        
+        redirect "/pirates/#{pirate.id}"
     end
 
 end 
