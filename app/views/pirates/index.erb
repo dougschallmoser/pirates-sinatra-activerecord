@@ -1,1 +1,12 @@
-index.erb
+<h1>Here are all of our pirates!</h1>
+
+<ul>
+    <% @pirates.each do |pirate| %>
+    <li>Name: <%= pirate.name %></li>
+    <li>Weight: <%= pirate.weight %></li>
+    <li>Height: <%= pirate.height %></li>
+    <br></br>
+    <% end %>
+</ul>
+
+<h3>To create a new pirate, click <a href="pirates/new">here</a>.</h3>
